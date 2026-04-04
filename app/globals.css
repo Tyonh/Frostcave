@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Nossas Cores Customizadas da Frostcave */
+  --color-background: #121214;
+  --color-header: #1a1a1e;
+  --color-accent: #00a8ff;
+  --color-border-dark: #2d2d30;
+  --color-text-muted: #9ca3af;
+  --color-text-light: #d1d5db;
+}
+
+/* Opcional: Garante que o fundo da página inteira pegue a cor escura */
+body {
+  background-color: var(--color-background);
+  color: white;
+}
