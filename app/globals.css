@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Nossas Cores Customizadas da Frostcave */
+  /* Cores Customizadas Frost Cave */
   --color-background: #121214;
   --color-header: #1a1a1e;
   --color-accent: #00a8ff;
@@ -10,8 +10,67 @@
   --color-text-light: #d1d5db;
 }
 
-/* Opcional: Garante que o fundo da página inteira pegue a cor escura */
 body {
   background-color: var(--color-background);
   color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* FORMATAÇÃO DO HTML IMPORTADO DOS SITES */
+.materia-congelada {
+  color: #c9d1d9;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  overflow-wrap: break-word; /* Impede que textos longos ou links quebrem a tela */
+}
+
+.materia-congelada p { margin-bottom: 1.5rem; }
+
+.materia-congelada h2, .materia-congelada h3, .materia-congelada h4 {
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* 1. DOMANDO AS IMAGENS */
+.materia-congelada img {
+  max-width: 100%; /* Garante que nunca vaze do container */
+  height: auto;    /* Mantém a proporção correta */
+  border-radius: 0.5rem;
+  border: 1px solid #30363d;
+  margin: 2rem auto;
+  display: block;
+}
+
+/* 2. DOMANDO OS VÍDEOS (iFrames do YouTube/Twitch) */
+.materia-congelada iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Mantém no formato widescreen de cinema */
+  height: auto;
+  border-radius: 0.5rem;
+  border: 1px solid #30363d;
+  margin: 2rem 0;
+}
+
+/* 3. ARRUMANDO AS LISTAS E TÓPICOS (Muito comum em Patch Notes) */
+.materia-congelada ul, .materia-congelada ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #c9d1d9;
+}
+
+.materia-congelada li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+.materia-congelada a {
+  color: #00a8ff;
+  text-decoration: none;
+}
+
+.materia-congelada a:hover {
+  text-decoration: underline;
 }

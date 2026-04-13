@@ -73,6 +73,31 @@ const nextConfig: NextConfig = {
         hostname: 'b.thumbs.redditmedia.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'assets.warhammer-community.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.warhammer-community.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'clan.fastly.steamstatic.com', // Imagens da Steam
+      },
+      {
+        protocol: 'https',
+        hostname: 'steamstore-a.akamaihd.net', // Imagens da Steam
+      },
+      {
+        protocol: 'https',
+        hostname: 'web.poecdn.com', // Imagens do Path of Exile
+      },
+      {
+        protocol: 'https',
+        hostname: 'd3qqidoz8mm2hm.cloudfront.net',
+      }
+      
     ],
   },
 };
